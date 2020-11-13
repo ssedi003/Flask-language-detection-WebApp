@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detect Language</title>
+</head>
+<body>
+    <form method="post" action="">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+
+        <h2>Enter sentence:</h2>
+        <p>
+            {{ form.text_area() }}
+        </p>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
